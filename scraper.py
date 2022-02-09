@@ -45,7 +45,7 @@ for num_of_page in range(1, count_of_pages + 1):
                 a_link = article.find('a', {'data-track-action': 'view article'})
                 news_articles.append(a_link)
 
-        # работаем с сылками статей с страницы
+        # работаем с ссылками статей с страницы
         for a_link in news_articles:
             # создаем имя файла
             a_title = file_name(a_link.text)

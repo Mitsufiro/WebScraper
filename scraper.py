@@ -30,7 +30,7 @@ for num_of_page in range(1, count_of_pages + 1):
     # создаем папку с номером страницы
     os.mkdir(f'Page_{num_of_page}')
     # задаем направление создания файлов со статьями в эту папку
-    os.chdir(f'/Users/ilyalyashenko/PycharmProjects/Web Scraper/Web Scraper/task/Page_{num_of_page}')
+    os.chdir(f'/ваш путь к папке с кодом/task/Page_{num_of_page}')
 
     # проверяем ссылку и ищем article
     if r:
@@ -60,4 +60,4 @@ for num_of_page in range(1, count_of_pages + 1):
             article_file.write(body)
             article_file.close()
 # меняем направление в исходную папку
-    os.chdir('/Users/ilyalyashenko/PycharmProjects/Web Scraper/Web Scraper/task')
+    os.chdir('/ваш путь к папке с кодом/task')
